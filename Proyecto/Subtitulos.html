@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link href="Stuff/Javascript.js" type="text/js" rel="stylesheet" />
+  <link href="Stuff/js sql.js" type="text/js" rel="stylesheet" />
+  <link href="Stuff/Javascript validation log.js" type="text/js" rel="stylesheet" />
+  <link href="Stuff/Contenido.css" type="text/css" rel="stylesheet" />
+  <title>Subtitulalo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cleartype" content="on">
+<body>
+    <h1>Subtitulos para Videos</h1>
+    <div class="Principal">
+        <button id="Inicio">Inicio</button>
+        <button id="Faq">Faq</button>
+        <button id="Contacto">Contacto</button>
+        <button id="Privacidad">Politica de privacidad</button>
+    </div>
+	<img src="Stuff/Logo.jpg" id="Logo">
+    <h2>Para empezar carga tu video con el botón abajo a la derecha de "Cargar". A continuación escribe los subtitulos en el area de texto izquierda.</h2>
+
+    <div class=CajaSubt>
+    <p id="Text">Subtítulos</p>
+    <textarea form="usrform">
+            1
+            00:00:01,000-->00:00:03,000
+
+            2
+            00:00:03,000-->00:00:06,000
+
+            3
+            00:00:06,000-->00:00:09,000
+            
+        </textarea>
+        <div class="Subtitulos">
+            <button id="Cargar">Cargar</button>
+            <button id="Actualizar">Actualizar</button>
+            <button id="Guardar">Guardar</button>
+        </div>
+    <p>Pulsa cargar para añadir un archivo de subtitulos. <br>Actualizar incorpora los cambios realizados en el video. <br>Guardar descarga en tu dispositivo el archivo de subtitulos en formato SRT. </p>
+    </div>
+    
+    <div class=CajaVideo>
+    <p id="Text">Video</p>
+    <video width="400" controls>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="Subtitulos">
+          <button class="Subt" id="Cargar">Cargar</button>
+      </div>
+      <p>Carga aquí tu video para la previsualización</p>
+      </div>
+
+	   <form method="post" action="" id="Enviar">
+
+            <div id="divEmail">
+                <label for="email">Email:</label>
+                <input type="text" id="Email" />
+                <label class="error"></label>
+            </div>
+            <div id="Contraseña">
+                <label for="password">Contraseña:</label>
+                <input type="text" id="Contraseña"/>
+                <label class="error"></label>
+            </div>
+			
+            <p><input type="submit" value="enviar" /></p>
+
+        </form>
+	  
+</body>
+</html>
+
+
+
